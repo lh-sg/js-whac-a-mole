@@ -14,6 +14,7 @@ const squares = document.querySelectorAll('.square')
 const mole = document.querySelector('.mole')
 const timeLeft = document.querySelector('#time-left')
 const score = document.querySelector('#score')
+const hit = document.querySelector('.hit')
 
 // 変数
 let result = 0
@@ -25,6 +26,7 @@ let timerId = null
 function randomSquare() {
     squares.forEach(square => {
         square.classList.remove('mole')
+        hit.innerHTML = ''
     })
     // 配列の要素番号をランダムに選ぶ
     let randomSquare = squares[Math.floor(Math.random() * 9)]
@@ -46,6 +48,7 @@ moveMole()
 squares.forEach(square => {
     square.addEventListener('mousedown',() => {
         if (square.id == hitPosition) {
+            hit.innerHTML = ' hit!';
             result++
             score.textContent = result
             hitPosition = null
