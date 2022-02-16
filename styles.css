@@ -1,0 +1,20 @@
+/* 四角のサイズと枠線 */
+.square {
+    height: 100px;
+    width: 100px;
+    border:solid black 1px;
+}
+
+/* 四角を配置するためのグリッド */
+.grid {
+    width: 306px;
+    height: 306px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* モグラの絵 */
+.mole {
+    background-image: url('mario.jpg');
+    background-size: cover;
+}
