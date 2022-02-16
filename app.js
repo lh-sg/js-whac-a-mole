@@ -37,7 +37,7 @@ function randomSquare() {
 
 // randomSquare() を繰り返し呼び出すファンクション（関数）
 function moveMole() {
-    timerId = setInterval(randomSquare,800)
+    timerId = setInterval(randomSquare,1000)
 }
 
 moveMole()
