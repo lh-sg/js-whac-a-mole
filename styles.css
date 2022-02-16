@@ -1,14 +1,16 @@
 /* 四角のサイズと枠線 */
 .square {
-    height: 200px;
-    width: 200px;
+    height: 120px;
+    width: 120px;
     border:solid black 0.5px;
+    display:grid;
+    flex-wrap: wrap;
 }
 
 /* 四角を配置するためのグリッド */
 .grid {
-    width: 603px;
-    height: 603px;
+    width: 363px;
+    height: 363px;
     display: flex;
     flex-wrap: wrap;
 }
